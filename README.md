@@ -13,9 +13,13 @@ http://localhost:8080/index.php
 ### Accéder à phpmyadmin 
 ```
 http://localhost:8081/
-
 username : user
 password : password
+
+root : root
+password :  
+
+
 ```
 
 
