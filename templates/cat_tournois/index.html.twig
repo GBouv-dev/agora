@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CatTournois index{% endblock %}
+
+{% block body %}
+    <h1>CatTournois index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Libelle</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cat_tournoi in cat_tournois %}
+            <tr>
+                <td>{{ cat_tournoi.id }}</td>
+                <td>{{ cat_tournoi.libelle }}</td>
+                <td>
+                    <a href="{{ path('app_cat_tournois_show', {'id': cat_tournoi.id}) }}">show</a>
+                    <a href="{{ path('app_cat_tournois_edit', {'id': cat_tournoi.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_cat_tournois_new') }}">Create new</a>
+{% endblock %}

@@ -11,19 +11,18 @@
 ### Accéder à la page
 
 ```
-http://localhost:8080/index.php
+http://localhost:8080/
 ```
 
-### Accéder à phpmyadmin 
+### Accéder à phpmyadmin
+
 ```
 http://localhost:8081/
 username : user
 password : password
 
 root : root
-password :  
+password :
 
 
 ```
-
-
