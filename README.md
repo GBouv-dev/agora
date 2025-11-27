@@ -22,7 +22,7 @@ username : user
 password : password
 
 root : root
-password :
+password : rootpassword
 
 
 ```
